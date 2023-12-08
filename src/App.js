@@ -7,6 +7,9 @@ import {useEffect} from "react";
 import CreateUser from './components/User/CreateUser';
 import LoginAdmin from './components/User/LoginAdmin';
 import DashboardAdmin from './components/User/AdminDashbored';
+import CreateMenu from './components/Menu/CreateMenu';
+import UpdateMenu from './components/Menu/UpdateMenu';
+import ListMenu from './components/Menu/ListMenu';
 function App() {
     useEffect(() => {
         console.log("hi1")
@@ -19,7 +22,10 @@ function App() {
       
         <Route exact path="/admin"  element={<LoginAdmin/>}></Route>
         <Route exact path="/dashboard-admin"  element={<DashboardAdmin/>}></Route>
-        
+        <Route exact path="/create-menu"  element={<CreateMenu/>}></Route>
+        <Route exact path="/update-menu/:id"  element={<UpdateMenu/>}></Route>
+        <Route exact path="/menu-list"  element={<ListMenu/>}></Route>
+
   
     
 

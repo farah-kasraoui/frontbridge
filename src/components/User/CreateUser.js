@@ -34,8 +34,7 @@ const CreateUser = () => {
       // Réinitialisez les valeurs du formulaire après la création de l'utilisateur
       setUserData({ firstname: '', lastname:'' });
     } catch (error) {
-    //   setMessage(`Erreur : ${error.message}`);
-    //   console.error('Erreur lors de la création de l\'utilisateur :', error.message);
+
     }
   };
 

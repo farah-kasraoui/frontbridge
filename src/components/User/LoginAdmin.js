@@ -33,7 +33,7 @@ const LoginAdmin = () => {
       console.log('Connexion réussie en tant qu\'administrateur :', response.data);
       setAdminData({ email: '', password: '' });
       // Redirection ou action à effectuer après la connexion réussie
-      window.location.href = '/dashboard-admin';
+      window.location.href = '/menu-list';
     } catch (error) {
       setMessage(`Erreur : ${error.message}`);
       console.error('Erreur lors de la connexion en tant qu\'administrateur :', error.message);
@@ -83,9 +83,6 @@ const LoginAdmin = () => {
 
         <MDBBtn className="mb-4 px-7" color='dark' size='lg'  type="submit">connect</MDBBtn>
         </form>
-        {/* <a className="small text-muted" href="#!">Forgot password?</a> */}
-        {/* <p className="mb-5 pb-lg-2" style={{color: '#393f81'}}>Don't have an account? <a href="/user" style={{color: '#393f81'}}>Register here</a></p> */}
-
         <div className='d-flex flex-row justify-content-start'>
           <a href="#!" className="small text-muted me-1">Terms of use.</a>
           <a href="#!" className="small text-muted">Privacy policy</a>
@@ -99,35 +96,6 @@ const LoginAdmin = () => {
 
 </MDBContainer>
 );
-
-
-
-
-    // <div>
-    //   <h2>Connexion Administrateur</h2>
-    //   <form onSubmit={handleSubmit}>
-    //     <input
-    //       type="email"
-    //       name="email"
-    //       placeholder="Adresse email"
-    //       value={adminData.email}
-    //       onChange={handleChange}
-    //       required
-    //     />
-    //     <br />
-    //     <input
-    //       type="password"
-    //       name="password"
-    //       placeholder="Mot de passe"
-    //       value={adminData.password}
-    //       onChange={handleChange}
-    //       required
-    //     />
-    //     <br />
-    //     <button type="submit">Se connecter</button>
-    //   </form>
-    //   {message && <p>{message}</p>}
-    // </div>
 
 
 };

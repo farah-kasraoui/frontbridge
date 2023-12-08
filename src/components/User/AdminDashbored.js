@@ -21,24 +21,7 @@ const DashboardAdmin = () => {
 
   return (
     <div>
-      <h2>Tableau de bord Administrateur</h2>
-      {loading ? (
-        <p>Chargement...</p>
-      ) : (
-        <div>
-          {/* Afficher les données récupérées */}
-          <ul>
-            {data.map((item) => (
-              <li key={item._id}>
-                {/* Afficher les détails de chaque élément */}
-                <p>Nom: {item.name}</p>
-                <p>Prix: {item.price}</p>
-                {/* ... d'autres détails */}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+ 
     </div>
   );
 };
